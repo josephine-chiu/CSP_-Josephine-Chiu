@@ -1,0 +1,1 @@
+# Josephine chiu, Variables Notes
