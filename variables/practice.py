@@ -1,9 +1,18 @@
 # Josephine Chiu, Variables Practice Python
 
-name = print("Josephine")
+name = "Josephine"
 
-smallnumber = print("five")
+smallnumber = "five"
 
-bignumber = print("two hundred")
+bignumber = "two hundred"
 
-breakfast = 
+breakfast = print()"eggs"
+
+subject = "World Civ"
+
+print(name)
+
+print(smallnumber)
+
+print(bignumber)
+
