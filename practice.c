@@ -1,3 +1,5 @@
+# Josephine chiu, Practice C
+
 #include <stdio.h>
 
 char name[]= "Josephine";
@@ -31,12 +33,6 @@ int main(void){
     printf("%d\n", age);
 
     printf("%s\n", subject);
-
-
-
-
-
-
 
     return 0;
 }
