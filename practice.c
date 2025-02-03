@@ -1,4 +1,4 @@
-# Josephine chiu, Practice C
+// Josephine chiu, Practice C
 
 #include <stdio.h>
 
