@@ -1,3 +1,4 @@
+// Josephine Chiu, 1st Program C
 #include <stdio.h>
 
 int myNum;
