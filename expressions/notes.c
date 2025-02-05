@@ -12,6 +12,7 @@ int mul = 4*6;
 float div = 4/6;
 int mod = 6%4;
 float ex = pow(5, 2); //exponent for c
+// (int)pow(2, 4) + 7 * (int)pow(3, 2)
 
 
 int main(void){
