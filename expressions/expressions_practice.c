@@ -1,4 +1,4 @@
-// Josephine Chiu, Expressions Practice.c
+// Josephine Chiu, Expressions Practice for C
 #include <stdio.h>
 #include <math.h> //this lets us do exponents
 

@@ -1,4 +1,4 @@
-// Josephine Chiu, Template for C
+// Josephine Chiu, Financial Calculator for C
 #include <stdio.h>
 
 int main(void){

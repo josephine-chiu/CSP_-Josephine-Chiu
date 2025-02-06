@@ -1,4 +1,4 @@
-// Josephine Chiu, Variables Notes
+// Josephine Chiu, Variables Notes for C
 #include <stdio.h>
 
 char name[]= "Vienna";
