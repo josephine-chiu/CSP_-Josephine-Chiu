@@ -12,8 +12,6 @@ int four = (3*pow(5, 2) / 15) - (5-pow(2, 2));
 int twenty_three = (pow(1, 4)*pow(2, 2) + pow(3, 3)) - pow(2, 5)/4;
 int ten = (pow(22/2-2*5, 2)) + (pow(4-6/6, 2));
 
-
-
 int main(void){
 printf("%d\n", one);
 printf("%d\n", nine);
