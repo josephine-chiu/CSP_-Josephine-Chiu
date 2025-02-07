@@ -22,7 +22,7 @@ transportation = float(input("How much is your monthly transportation?\n"))
 savings = income*0.1
 
 # Calculate spending money income - (rent + utilities + groceries + transportation) -> variable
-spending = income - rent+utilities+groceries+transportation
+spending = rent+utilities+groceries+transportation
 
 # Calculate percent of rent (rent/income) variable 
 percent_rent = rent/income*100
@@ -40,23 +40,19 @@ percent_transportation = transportation/income*100
 percent_spending = spending/income*100
 
 # tell user category spending amount AND percent for rent ("You spend $XX.XX on rent and that is XX% of your income")
-print("You spend",rent, "on rent and that is", percent_rent, "percent of your income.")
+print("You spent", (f"{rent:.2f}") , "dollars on rent and that is", (f"{percent_rent:.1f}"), "percent of your income.")
 
 # tell user category spending amount AND percent for utilities ("You spend $XX.XX on utilities and that is XX% of your income")
-print("You spend", utilities, "on utilities and that is", percent_utilities, "percent of your income.")
+print("You spent", (f"{utilities:.2f}") , "dollars on utilities and that is", (f"{percent_utilities:.1f}"), "percent of your income.")
 
 # tell user category spending amount AND percent for groceries ("You spend $XX.XX on groceries and that is XX% of your income")
-print("You spend", groceries, "on groceries and that is", percent_groceries, "percent of your income.")
+print("You spent", (f"{groceries:.2f}") , "dollars on groceries and that is", (f"{percent_groceries:.1f}"), "percent of your income.")
 
 # tell user category spending amount AND percent for transportation ("You spend $XX.XX on transportation and that is XX% of your income")
-print("You spend",transportation, "on transportation and that is", percent_transportation, "percent of your income.")
+print("You spent", (f"{transportation:.2f}") , "dollars on transportation and that is", (f"{percent_transportation:.1f}"), "percent of your income.")
 
 # tell user category spending amount AND percent for spending ("You spend $XX.XX on spending and that is XX% of your income")
-print("You spend", spending, "and that is", percent_spending, "percent of your income.")
+print("You spent", (f"{spending:.2f}") , "dollars and that is", (f"{percent_spending:.1f}"), "percent of your income.")
 
 # tell user category savings amount AND percent for savings ("You spend $XX.XX on rent and that is 10% of your income")
-print("You have",savings, "in savings and that is", percent_rent, "percent of your income.")
-
-
-
-
+print("You saved", (f"{savings:.2f}") , "dollars and that is 10 percent of your income.")
