@@ -1,14 +1,13 @@
 // Josephine Chiu, Financial Calculator for C
 #include <stdio.h>
 
-int main(void){
 
 char welcome[] = "Hello! Welcome to your personal financial calculator!";
-
 float income, rent, utilities, groceries, transportation, savings, expenses, total;
-
 float percent_rent, percent_utilities, percent_groceries, percent_transportation, percent_savings, percent_expenses;
 
+
+int main(void){
 
 printf("%s\n", welcome);
 printf("What is your monthly income?\n");
@@ -35,7 +34,7 @@ printf("Your monthly groceries costs $%.2f\n", groceries);
 printf("Your monthly transportation costs $%.2f\n", transportation);
 printf("Your monthly expenses are $%.2f\n", expenses);
 printf("Your monthly savings are $%.2f\n", savings);
-printf("You have $%.2f\n", total);
+printf("You have $%.2f left to spend\n", total);
 
 
 percent_rent = rent/income*100;
