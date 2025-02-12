@@ -25,6 +25,5 @@ int main(void){
     printf("%s\n", two);
     strcat(one,two); // put the variables in the order you want them to be
     strcat(three, one);
-    printf("%s", three);
     return 0;
 }

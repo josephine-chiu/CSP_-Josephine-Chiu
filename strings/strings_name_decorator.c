@@ -23,4 +23,4 @@ char dec_2[] = "~~~";
 //decoration_1 = ("~~~")
 //decoration_2 = ("~~~")
 //print(decoration_1+name+decoration_2)
-//print("I hope you like your decorated name!")
+//print("I hope you like your decorated name!")dfd
