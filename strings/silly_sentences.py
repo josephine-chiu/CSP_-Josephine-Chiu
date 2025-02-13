@@ -1,6 +1,11 @@
 # Josephine Chiu, Silly Sentences for Python
 
 #string variables for my user inputs (minimum of 3)
+animal = input("What is your favorite animal?\n")
+
+
+
+
 #introdue user to program...tell them whatt is happening (print statement)
 
 print("Hello! Welcome to your personal Silly Sentences maker! Please give me a random adjective, verb, and noun:\n");
