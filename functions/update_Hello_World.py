@@ -1,21 +1,10 @@
 # Josephine Chiu, Update Hello World for Python
-
+    
 def user(name):
-    return (input("Please tell me a name:\n"))
-name = user("name:\n")
-print(f"Hello, {name}!\n")
-
-name = user("name:\n")
-print(f"Hello, {name}!\n")
-
-name = user("name:\n")
-print(f"Hello, {name}!\n")
-
-name = user("name:\n")
-print(f"Hello, {name}!\n")
-
-name = user("name:\n")
-print(f"Hello, {name}!\n")
-
-name = user("name:\n")
-print(f"Hello, {name}!\n")
+    name = input("What is your name?\n")
+    print(f"Hello {name}! You will be going on the rollercoaster!\n")
+user("dsjfklsdf")
+user("name")
+user("name")
+user("name")
+user("name")    
