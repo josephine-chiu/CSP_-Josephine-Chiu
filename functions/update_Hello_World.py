@@ -1,9 +1,9 @@
 # Josephine Chiu, Update Hello World for Python
-    
+
 def user(name):
-    print(f"Hello {name}! Welcome to the Digital Circus!\n")
-user("Bob")
-user("John")
-user("Dave")
-user("Amon")
-user("Joe")
+    return print(f"Hello {name}\n")
+name1 = user("Dave")
+name2 = user("John")
+name3 = user("Bob")
+name4 = user("Mary")
+name5 = user("Sasha")
