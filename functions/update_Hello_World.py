@@ -1,8 +1,8 @@
 # Josephine Chiu, Update Hello World for Python
 
 def user(name):
-    return "Hello " + name + "!"
-print(user("Dave"))
+    return "Hello " + name + "!" #name variable is used in a string
+print(user("Dave")) #the argument is set to "name"
 print(user("John"))
 print(user("Bob"))
 print(user("Vincent"))
