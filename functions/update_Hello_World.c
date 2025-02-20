@@ -6,7 +6,6 @@ char add(char type[20]){
     printf("%s\n", name);
 }
 
-dsa
 int main(void){
     printf("Hello world");
     return 0;
