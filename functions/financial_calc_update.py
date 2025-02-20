@@ -30,3 +30,7 @@ savings = income*0.1
 spending = (rent+utilities+groceries+transportation+savings)
 
 info(income, rent, "rent")
+info(income, utilities, "utilities")
+info(income, groceries, "groceries")
+info(income, transportation, "transportation")
+info(income, savings, "savings")
