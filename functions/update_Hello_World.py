@@ -1,7 +1,7 @@
 # Josephine Chiu, Update Hello World for Python
 
 def user(name):
-    return print(f"Hello {name}\n")
+    return(f"Hello {name}\n")
 name1 = user("Dave")
 name2 = user("John")
 name3 = user("Bob")
