@@ -3,6 +3,8 @@
 
 
 char welcome[] = "Hello! Welcome to your personal financial calculator!";
+
+
 float income, rent, utilities, groceries, transportation, savings, expenses, total;
 float percent_rent, percent_utilities, percent_groceries, percent_transportation, percent_savings, percent_expenses;
 
