@@ -1,57 +1,42 @@
 // Josephine Chiu, Financial Calculator Update for C
 #include <stdio.h>
 
+float inputs(float input, char type){
+    printf("What is your monthly %s?\n", type);
+    scanf("%f", input);
+    return input;
+}
+void percent(float income, float amount, char type) {
+    float percent = (amount/income)*100;
+    printf("Your %s is %.2f, which is %.2%% of your income.\n", type, amount, percent);
+}
 
-char welcome[] = "Hello! Welcome to your personal financial calculator!";
-
-
-float income, rent, utilities, groceries, transportation, savings, expenses, total;
-float percent_rent, percent_utilities, percent_groceries, percent_transportation, percent_savings, percent_expenses;
-
+float income;
+float rent;
+float utilities;
+float groceries; 
+float transportation;
+float savings; 
+float expenses; 
+float total;
 
 int main(void){
+printf("Welcome to your personal Fianancial Calculator which will help you analyze your expenses and savings!\n");
+income = inputs(income, "income");
+rent = inputs(rent, "rent");
+utilities = inputs(utilities, "utilities");
+groceries = inputs(groceries, "groceries");
+transportation = inputs(transportation, "transportation");
 
-printf("%s\n", welcome);
-printf("What is your monthly income?\n");
-scanf("%f", &income);
-printf("How much does your rent cost?\n");
-scanf("%f", &rent);
-printf("How much do your utilities cost?\n");
-scanf("%f", &utilities);
-printf("How much do your groceries cost?\n");
-scanf("%f", &groceries);
-printf("How much does your transportation cost?\n");
-scanf("%f", &transportation);
-
+percent(income, rent, "rent");
+percent(income, utilities, "utilities");
+percent(income, groceries, "groceries");
+percent(income, transportation, "transportation");
+percent(income, expenses, "expenses");
+percent(income, savings, "savings");
 
 expenses = rent + utilities + groceries + transportation;
 savings = income * .1;
 total = income - savings - expenses;
-
-
-printf("Your monthly income is $%.2f\n", income);
-printf("Your monthly rent costs $%.2f\n", rent);
-printf("Your monthly utilities cost $%.2f\n", utilities);
-printf("Your monthly groceries costs $%.2f\n", groceries);
-printf("Your monthly transportation costs $%.2f\n", transportation);
-printf("Your monthly expenses are $%.2f\n", expenses);
-printf("Your monthly savings are $%.2f\n", savings);
-printf("You have $%.2f left to spend\n", total);
-
-
-percent_rent = rent/income*100;
-percent_utilities = utilities/income*100;
-percent_groceries = groceries/income*100;
-percent_transportation = transportation/income*100;
-percent_expenses = expenses/income*100;
-percent_savings = savings/income*100;
-
-
-printf("The cost of your rent is %.1f%% of your income\n", percent_rent);
-printf("The cost of your utilities are %.1f%% of your income\n", percent_utilities);
-printf("The cost of your groceries are %.1f%% of your income\n", percent_groceries);
-printf("The cost of your transportation is %.1f%% of your income\n", percent_transportation);
-printf("Your expenses are %.1f%% of your income\n", percent_expenses);
-printf("Your savings are %.1f%% of your income\n", percent_savings);
     return 0;
 }
