@@ -1,42 +1,48 @@
-// Josephine Chiu, Financial Calculator Update for C
+// Josephine Chiu, Financial Calculator Update for C 
+
 #include <stdio.h>
 
-float inputs(float input, char type){
-    printf("What is your monthly %s?\n", type);
+float input(char*type, float*input){
+    printf("What is your monthly %s:\n", type);
     scanf("%f", input);
-    return input;
-}
-void percent(float income, float amount, char type) {
-    float percent = (amount/income)*100;
-    printf("Your %s is %.2f, which is %.2%% of your income.\n", type, amount, percent);
+    return *input;
 }
 
-float income;
-float rent;
-float utilities;
-float groceries; 
-float transportation;
-float savings; 
-float expenses; 
+void percent(float cost, float income, const char* type) {  
+    float percent = (cost / income) * 100;  
+    printf("Your %s is $%.2f, which is %.2f%% of your income.\n", type, cost, percent);  
+}
 float total;
+float spendings;
+float savings;
+float rent;
+float income;
+float utilities;
+float groceries;
+float transportation;
 
 int main(void){
-printf("Welcome to your personal Fianancial Calculator which will help you analyze your expenses and savings!\n");
-income = inputs(income, "income");
-rent = inputs(rent, "rent");
-utilities = inputs(utilities, "utilities");
-groceries = inputs(groceries, "groceries");
-transportation = inputs(transportation, "transportation");
 
-percent(income, rent, "rent");
-percent(income, utilities, "utilities");
-percent(income, groceries, "groceries");
-percent(income, transportation, "transportation");
-percent(income, expenses, "expenses");
-percent(income, savings, "savings");
+printf("Welcome to the Financial Calculator! Please answer the follwing questions in order to fully analyze your savings and expenses.\n");
 
-expenses = rent + utilities + groceries + transportation;
-savings = income * .1;
-total = income - savings - expenses;
+income= input("income", &income);
+rent = input("rent", &rent);
+utilities = input("utilities", &utilities);
+groceries = input("groceries", &groceries);
+transportation = input("transportation", &transportation);
+
+savings = income*0.1;
+spendings = income-savings-rent-utilities-groceries-transportation;
+total = income - savings - spendings;
+
+percent(total, income, "total");
+percent(rent, income, "rent");  
+percent(utilities, income, "utilities");  
+percent(groceries, income, "groceries");  
+percent(transportation, income, "transportation");  
+percent(savings, income, "savings");  
+percent(spendings, income, "spendings");  
     return 0;
 }
+
+//hi Ms. larose. This is josephine. I tried my best. :)
