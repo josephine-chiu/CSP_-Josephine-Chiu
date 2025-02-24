@@ -1,1 +1,0 @@
-char welcome[] = "Hello! Welcome to your personal financial calculator!";

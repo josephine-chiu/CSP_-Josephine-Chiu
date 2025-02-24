@@ -26,5 +26,4 @@ percent(income, groceries, "groceries")
 percent(income, transportation, "transportation")
 percent(income, spending, "spending")
 
-print("We are at line 27")
 print(f"You saved ${savings:.2f} and that is 10% of your income")
