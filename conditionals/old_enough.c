@@ -9,7 +9,11 @@ int main(void){
 printf("How old are you (in years)?\n");
 scanf("%d", &age);
 
-if(age <= 14){
+if(age < 5){
+    printf("You can't vote, drive, get a learner's permit, or go to school. Whomp whomp.\n"); 
+}else if(age ==5){
+    printf("You can't vote, or drive, or get a learner's permit, but you can go to school!\n");
+} else if(age <= 14){
     printf("You are not old enough to vote or drive or get a learners permit, but you can go to school so hooray!\n");
 } else if(age == 15){
     printf("You can't vote, but you can drive if you get a learners permit which you're old enough to get. Also, you can go to school so you know, yay.\n");
