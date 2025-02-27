@@ -46,3 +46,12 @@ else:
         print(f"{num} is the best number!")
     else:
         print(f"That is {num}")
+
+#What do each of the diffeerent symbols mean in conditionals?
+# < less than
+# > greater than
+# <= less than or equal to
+# >= greater than or equal to
+# == equal to
+# === *doesn't exist in python*
+# ! Not
