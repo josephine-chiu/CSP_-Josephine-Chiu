@@ -16,3 +16,6 @@ elif age >=18:
     print("You are not old enough to vote, BUT you are old enough to drive, you are old enough to get a learners permit, and you are old enough to go to school.\n")
 else:
     print("You're old enough to go to school! But you can't really do anything else...")
+
+#in python, use "and" for and statements
+#if age >= 18 and age <= 30:

@@ -26,3 +26,12 @@ if(age < 5){
 }
     return 0;
 }
+
+// in c, use "&&" to have a range
+// if(age >=18 && <= 30){
+
+// if(age >=18 && age <= 90){
+    //printf("You're an adult");
+//}else{
+    //printf("You're still a kid");
+    
