@@ -6,17 +6,17 @@ int main(void){
     //
 
 // 2. What are the two types of loops?
-    // For loops
-    //int x;
-    //for(x = 0; x<10; x++){
-    //    printf("Hello\n");
-    //}
-    ////While loop
-    //int i=1;
-    //while(i<10){
-    //    printf("%d\n", i);
-    //    i++;
-    //}
+    //For loops
+    int x;
+    for(x = 0; x<10; x++){
+       printf("Hello\n");
+    }
+    //While loop
+    int i=1;
+    while(i<10){
+        printf("%d\n", i);
+       i++;
+    }
 
 // 3. What is iteration
     // the act of repeating
