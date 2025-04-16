@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!--embeded style sheet-->
+        <style>
+            /*A selector is just how you tell CSS what on the page that needs to be changed
+            1. Element selecter
+            2. id selector
+            3. Class selector*/
+            *{
+                background-color: yellowgreen;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+           /* 1. element selector*/ 
+            li{
+                color:coral;
+            }
+            /* 2. ID selector*/
+            #even{
+                color: #A50D63;
+                font-size: 20px;
+            }
+            /* 3. class selector*/
+            .intro{
+                color: red;
+                text-align: center;
+            }
+
+
+            #img-src{
+                font-size: 15px;
+                color: gray;
+            }
+
+            img{
+                width: 10%; /*ALWAYS use WIDTH. It's way better than height*/
+            }
+
+            h1{
+                font-size: 35px;
+                text-align: center;
+                text-decoration:underline;
+            }
+            /*conflicting CSS commands will always go with whatever is last. Only use a selector ONE TIME*/
+        </style>
+
+        <title>html advanced notes</title>
+    </head>
+    <body>\
+        <div>
+        <h1>HTML Advanced Notes</h1>
+        <p class="intro">Nesting is an html tag is putting it inside of another one. h tags should never be nested in a paragraph.</p>
+        <ol>
+            <li> li tags must be nested</li>
+            <li>What appears on the webpage is nested in the body tag</li>
+        </ol> 
+    </div>
+    <div>
+        <h2>Candy!</h2>
+        <ul>
+            <li>Butterfinger</li>
+            <li id="even">Crunch</li>
+            <li>100 grand</li>
+        </ul>
+        <img src="https://www.animationmagazine.net/wordpress/wp-content/uploads/Avatar-The-Last-Airbender-nickelodeon.jpg"
+            alt="Aang is cool"
+            height="100px"/>
+
+        <dl>
+            <dt>Aang</dt>
+            <p id="img-src">Image from:medium</p>
+            <dd>The last airbender. The avatar...kinda a dork</dd>
+            <dt>Katara</dt>
+            <dd>Water bender, from the South pole. Gives speeches about hope all the itme...</dd>
+        </dl>
+        <p>An attribute is additional information given to the computer inside of the opening tag.</p>
+        <a href="https://www.w3schools.com/Html/html_attributes.asp" target="_blank">Link to more information</a> <!--The target="blank" makes the link open on a new tab!!!!-->
+        <br>
+        <a href="https://www.w3schools.com/Html/html_comments.asp" target="_blank">More information!</a>
+    </body>
+</html>
