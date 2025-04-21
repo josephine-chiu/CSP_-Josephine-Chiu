@@ -27,6 +27,12 @@ img{
     display: flex;
     justify-content: center;
 }
+
+#img{
+    display: block;
+    margin: auto;
+    width: 50%;
+}
 /*generic font families, always end with one of these
 1. Serif (looks like Arial)
 2. Sans-serif
