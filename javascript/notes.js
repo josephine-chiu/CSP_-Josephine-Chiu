@@ -1,6 +1,7 @@
 document = notes.html
 function hello(){
-    document.getElementById("title").innerHTML = "Hello World!"
+    let name = window.prompt("What is your name?", "Koro Sensei")
+    document.getElementById("title").innerHTML = "Hello " + name + "!"
 }
 count = 0
 function change(){
@@ -19,8 +20,14 @@ function highlight(){
 }
 function normal(){
     document.getElementById("btn").style.backgroundColor = "gray"
-    document.getElementById("btn").style.background = "black"
+    document.getElementById("btn").style.background = "orange"
 }
 function show(){
     document.getElementById("hidden").style.display = "block"
+}
+function pop(){
+    window.alert("For real. don't click this!")
+}
+function push(){
+    document.getElementById("btn").style.backgroundColor = "red"
 }
