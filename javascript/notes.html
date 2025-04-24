@@ -3,12 +3,14 @@
     <head>
         <meta charset="UTF-8">
 <style>
-    .img{
-        width: auto;
-        height: 100px 
+    img{
+        width: 10%;
+        height: 100px; 
     }
-
     #hidden{
+        display: none;
+    }
+    #extra{
         display: none;
     }
 </style>
@@ -19,10 +21,19 @@
         <h1 id="title" onclick="show()">Title of Page</h1>
         <p id="dont" onclick="pop()"> Don't click me</p>
         <button id="btn" onmouseover="highlight()" onmouseout="normal()" onmousedown="push()"  onmouseup="highlightonm()" onclick="hello()">Click Me!</button>
+        
         <img id="img" onmouseover="change()"src="https://cdn.mos.cms.futurecdn.net/ntFmJUZ8tw3ULD3tkBaAtf.jpg" 
         alt = Cool mountain/>
-        <img id="hidden" src="https://cdn.mos.cms.futurecdn.net/ntFmJUZ8tw3ULD3tkBaAtf.jpg" >
-    </body>
         
-    
+        <img id="hidden" src="https://cdn.mos.cms.futurecdn.net/ntFmJUZ8tw3ULD3tkBaAtf.jpg">
+        <button id="show" onclick="more()">Show More</button>
+        <div id="extra"></div>
+            <p>jdkhfkjdslhflkjdshfkjldshlkjhfhdsfskdhfskallkdsjfh</p>
+            <ul>
+                <li>jflkdsjflkds</li>
+                <li>jflkdsjflkds</li>
+                <li>jflkdsjflkds</li>
+                <li>jflkdsjflkds</li>
+            </ul>
+    </body>
 </html>
