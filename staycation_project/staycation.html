@@ -3,18 +3,48 @@
     <head> 
         <meta charset="UTF-8"> <!--Type of alphabet being used-->
 <style>
+    #body{
+        background-color: #eddaab;
+        font-family: cursive
+
+    }
+    h1{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: center;
+        color: #0f276e;
+        padding: 30px;
+    }
+    #words{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: center;
+        color: #0f276e;
+    }
+    img{
+        display: block;
+        margin: auto;
+        width: auto;
+        height: 600px;
+        border-radius: 30px;
+    }
+    #img1{
+        text-align: center;
+        color: gray;
+    }
+    
 </style>
 
         <title>Staycation Project: Antelope Island</title> <!--What shows in the tab at the top fo the page-->
     </head>
-    <body> <!--this is shown on the webpage-->
-        <h1>Antelop Island: It's the place to be!</h1>
-        <h2>Why should you go?</h2>
-        <div id="words"> 
+    <body> 
+        <div id="body">
+        <h1>Antelope Island: It's the place to be!</h1>
+        <img src="https://assets.simpleviewinc.com/simpleview/image/upload/crm/saltlake/AntelopeIsland_SeanBuckley_0054_81A29703-DFCF-89C8-4B618BA14CCEC2D9-81a295249a42ba7_81a2d0cc-a8fa-e0a4-c45dec1b9498eaa8.jpg" id="scenary" 
+        alt="This is the entrance sign to the park."/>
+        <p id="img1">Image from: https://www.visitsaltlake.com/listing/great-salt-lake-%26-antelope-island-1-day-tour/71821/</p>
+        <div id="words"></div>
+        <h2>Why should you go?</h2> 
             <p id="why"> Antelope Island is one of the most popular state parks in Utah. it is the largest island in the Great Salt Lake and is home to a variety of animals like the American Bison, antelopes, coyotes, and waterfowl. The sceneary is absolutely <b>BREATHTAKING</b>. As you hike up the rocks and hills, you wil feel like you're on top of the world.</p>
-            <img src="https://utahstateparks-pl.static.reserveamerica.com/webphotos/UT/pid343031/2/180x120.jpg" id="bison" 
-            alt="These are the bison in Antelop Island."/>
-            <p>Image from:https://utahstateparks.reserveamerica.com/antelope-island-state-park/r/facilityDetails.do?contractCode=UT&parkId=343031</p>
+           
           
         <h3>Four Reasons Why</h3>
         <ul id="facts">
@@ -36,16 +66,12 @@
         <br>
             <button id="btn" onclick="more()" >Show more</button>
             <div id="extra">
-                <p>Another one of my favorite songs is Found/Tonight.
-                It's a mashup of two songs: "The Story of Tonight" from Hamilton
-                and "You Will Be Found" from Dear Evan Hansen (DEH). This song combines
-                emotion and meaning together to make a masterpiece. What's even 
-                better is that Ben Platt (actor of Evan Hansen) sings the Hamilton 
-                song and Lin Manuel Miranda (Alexander Hamilton) sings DEH!</p>
+                <p>I love antelop island!!! WOW!!!</p>
                 <img id=found src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWtQyZYqV1qxi7FvFZMdpEDGMiBFiG7BMT4A&s" 
                 onmouseover="change()">
             </div>
             <script src = "first_webpage.js"></script> 
+        </div>
     </body>
 </html>
 
