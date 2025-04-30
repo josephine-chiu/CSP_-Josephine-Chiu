@@ -3,9 +3,9 @@
     <head> 
         <meta charset="UTF-8"> <!--Type of alphabet being used-->
 <style>
-    #text{
+    #everything{
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 1fr 1fr 1fr;
         background-color: #eddaab;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
     }
@@ -14,35 +14,31 @@
         text-align: center;
         color: #0f276e;
         font-size: 100px;
+        margin: 10%;
     }
     #words{
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        text-align: center;
         color: #0f276e;
         font-size: 20px;
     }
-    img{
-        display: block;
-        margin: auto;
+    #imgs{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         width: auto;
-        height: 600px;
-        border-radius: 30px;
     }
     #img1{
         text-align: center;
         color: gray;
     }
-    
 </style>
 
         <title>Staycation Project: Antelope Island</title> <!--What shows in the tab at the top fo the page-->
     </head>
     <body> 
-    <div id="text">
-        <h1>Antelope Island</h1>
-        <img src="https://assets.simpleviewinc.com/simpleview/image/upload/crm/saltlake/AntelopeIsland_SeanBuckley_0054_81A29703-DFCF-89C8-4B618BA14CCEC2D9-81a295249a42ba7_81a2d0cc-a8fa-e0a4-c45dec1b9498eaa8.jpg" id="scenary" 
-        alt="This is the entrance sign to the park."/>
-        <p id="img1">Image from: https://www.visitsaltlake.com/listing/great-salt-lake-%26-antelope-island-1-day-tour/71821/</p>
+    <div id="everything">
+        <h1>Antelope Island: It's The Place to Be!</h1>
+        
         <div id="words">
         <h2>Why should you go?</h2> 
             <p id="why"> Antelope Island is one of the most popular state parks in Utah. it is the largest island in the Great Salt Lake and is home to a variety of animals like the American Bison, antelopes, coyotes, and waterfowl. The sceneary is absolutely <b>BREATHTAKING</b>. As you hike up the rocks and hills, you wil feel like you're on top of the world.</p>
@@ -55,15 +51,26 @@
             <li>This state park welcomes dogs, so make sure to bring along your furry friend!</li>
         </ul>
         <br>
-        <h4>The Burning Bush - Hans Zimmer</h4> 
-            <p class="bush"> The Burning Bush is from the movie The Prince of Egypt and it completely <i>destroyed</i> me when I first to it. It still does to this day. It's so emotional that it might as well knock your socks off. Hans Zimmer masterfully constructs a calm setting with tranquil strings playing in the background. However, as the situation intensifies, so does the music. Such an awe-invoking piece that will forever be remembered.</p>
             <img src="" 
             alt="This is the movie poster."/>
             <p>Image from:</p>
         </div>
+    <div id="imgs">
+        <img src="https://assets.simpleviewinc.com/simpleview/image/upload/crm/saltlake/AntelopeIsland_SeanBuckley_0054_81A29703-DFCF-89C8-4B618BA14CCEC2D9-81a295249a42ba7_81a2d0cc-a8fa-e0a4-c45dec1b9498eaa8.jpg"  
+        alt="This is the entrance sign to the park."/>
+        <p id="img1">Image from: https://www.visitsaltlake.com/listing/great-salt-lake-%26-antelope-island-1-day-tour/71821/</p>
+
+        <img src="https://images.ctfassets.net/0wjmk6wgfops/3WRVZrwr311SwlyzfTydlt/df15f5b0ab7a985f0762196bed3ee1f0/Antelope_Island_blue_skies_stock_AdobeStock_313773770.jpeg?w=1200&h=630&f=center&fit=fill"
+        alt="Pretty mountains"/>
+        <p id="img2">Image from: https://www.utah.com/destinations/state-parks/antelope-island-state-park/</p>
+
+        <img src="https://beyondyellowbrickblog.com/wp-content/uploads/2022/06/Causeway-to-Antelope-Island-State-Park-1-1.jpeg"
+        alt="Dark blue sky."/>
+        <p id="img3">Image from: https://beyondyellowbrickblog.com/antelope-island-state-park-things-to-do/</p>
+    </div>
         <br> 
         <br>
-            <button id="btn" onclick="more()" >Show more</button>
+            <!--<button id="btn" onclick="more()" >Show more</button>
             <div id="extra">
                 <p>I love antelop island!!! WOW!!!</p>
                 <img id=found src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWtQyZYqV1qxi7FvFZMdpEDGMiBFiG7BMT4A&s" 
@@ -76,7 +83,7 @@
 
 
 
-<!--2 related images, 1 list, 1 link to another website--> :
+<!-2 related images, 1 list, 1 link to another website--> :
 <!--use fucntion change() and function()back for the "change picture" thing-->
 <!--function back(){
     document.getElementById("tiger").src = "https://transforms.stlzoo.org/production/animals/amur-tiger-01-01.jpg?w=1200&h=1200&auto=compress%2Cformat&fit=crop&dm=1658935145&s=95d03aceddd44dc8271beed46eae30bc"
