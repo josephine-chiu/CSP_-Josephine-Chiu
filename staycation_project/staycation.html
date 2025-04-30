@@ -7,7 +7,8 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         background-color: #eddaab;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        min-height: 100vh;
     }
     h1{
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -19,18 +20,42 @@
     #words{
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         color: #0f276e;
-        font-size: 20px;
+        font-size: 27px;
+        padding: 8%;
+        margin: auto;
     }
     #imgs{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #img1 img{
+        max-width: 120%;
+        height: auto;
+        padding: 1%;
+        border-radius: 15%;
+    }
+    #img2 img{
+        max-width: 100%;
+        height: auto;
+        padding: 10%;
+        border-radius: 30%;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: auto;
+        flex-direction: row-reverse;
+        
     }
-    #img1{
-        text-align: center;
-        color: gray;
+    #img3 img{
+        max-width: 100%;
+        height: auto;
+        padding: 10%;
     }
+    
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+
 </style>
 
         <title>Staycation Project: Antelope Island</title> <!--What shows in the tab at the top fo the page-->
@@ -41,7 +66,7 @@
         
         <div id="words">
         <h2>Why should you go?</h2> 
-            <p id="why"> Antelope Island is one of the most popular state parks in Utah. it is the largest island in the Great Salt Lake and is home to a variety of animals like the American Bison, antelopes, coyotes, and waterfowl. The sceneary is absolutely <b>BREATHTAKING</b>. As you hike up the rocks and hills, you wil feel like you're on top of the world.</p>
+            <p id="why"> Antelope Island is one of the most popular state parks in Utah. it is the largest island in the Great Salt Lake and is home to a variety of animals like the American Bison, antelopes, coyotes, and waterfowl. The sceneary is absolutely <b>BREATHTAKING</b>. There are many things you can do like hiking, sightseeing, and just enjoying nature. The HistoricAs you hike up the rocks and hills, you wil feel like you're on top of the world. </p>
            
         <h3>Four Reasons Why</h3>
         <ul id="facts">
@@ -51,22 +76,27 @@
             <li>This state park welcomes dogs, so make sure to bring along your furry friend!</li>
         </ul>
         <br>
-            <img src="" 
-            alt="This is the movie poster."/>
-            <p>Image from:</p>
-        </div>
+        <br>
     <div id="imgs">
-        <img src="https://assets.simpleviewinc.com/simpleview/image/upload/crm/saltlake/AntelopeIsland_SeanBuckley_0054_81A29703-DFCF-89C8-4B618BA14CCEC2D9-81a295249a42ba7_81a2d0cc-a8fa-e0a4-c45dec1b9498eaa8.jpg"  
-        alt="This is the entrance sign to the park."/>
-        <p id="img1">Image from: https://www.visitsaltlake.com/listing/great-salt-lake-%26-antelope-island-1-day-tour/71821/</p>
-
-        <img src="https://images.ctfassets.net/0wjmk6wgfops/3WRVZrwr311SwlyzfTydlt/df15f5b0ab7a985f0762196bed3ee1f0/Antelope_Island_blue_skies_stock_AdobeStock_313773770.jpeg?w=1200&h=630&f=center&fit=fill"
-        alt="Pretty mountains"/>
-        <p id="img2">Image from: https://www.utah.com/destinations/state-parks/antelope-island-state-park/</p>
-
-        <img src="https://beyondyellowbrickblog.com/wp-content/uploads/2022/06/Causeway-to-Antelope-Island-State-Park-1-1.jpeg"
-        alt="Dark blue sky."/>
-        <p id="img3">Image from: https://beyondyellowbrickblog.com/antelope-island-state-park-things-to-do/</p>
+        <div id="img1">
+            <img src="https://assets.simpleviewinc.com/simpleview/image/upload/crm/saltlake/AntelopeIsland_SeanBuckley_0054_81A29703-DFCF-89C8-4B618BA14CCEC2D9-81a295249a42ba7_81a2d0cc-a8fa-e0a4-c45dec1b9498eaa8.jpg"  
+            alt="This is the entrance sign to the park."/>
+            <p>Image from: https://www.visitsaltlake.com/listing/great-salt-lake-%26-antelope-island-1-day-tour/71821/</p>
+            <br>
+        </div>
+        <br>
+        <div id="img2">
+            <img src="https://images.ctfassets.net/0wjmk6wgfops/3WRVZrwr311SwlyzfTydlt/df15f5b0ab7a985f0762196bed3ee1f0/Antelope_Island_blue_skies_stock_AdobeStock_313773770.jpeg?w=1200&h=630&f=center&fit=fill"
+            alt="Pretty mountains">
+            <p>Image from: https://www.utah.com/destinations/state-parks/antelope-island-state-park/</p>
+        </div>
+        <br>
+        <div id="img3">
+            <img src="https://beyondyellowbrickblog.com/wp-content/uploads/2022/06/Causeway-to-Antelope-Island-State-Park-1-1.jpeg"
+            alt="Dark blue sky."/>
+            <p id="img3">Image from: https://beyondyellowbrickblog.com/antelope-island-state-park-things-to-do/</p>
+        </div>
+        <br>
     </div>
         <br> 
         <br>
