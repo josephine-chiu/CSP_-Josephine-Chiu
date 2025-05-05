@@ -5,10 +5,10 @@
 <style>
     #everything{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+        padding: 10px;
         background-color: #2D96AF;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        min-height: 100vh;
     }
     h1{
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -17,22 +17,30 @@
         color: #FFFFFF;
         font-size: 100px;
     }
-    #words{
+    #why{
         font-size: 30px;
         margin: 30px;
+        padding-top: -50px;
         color: #0f276e;
+    }
+    #facts{
+        color: #0f276e;
+        font-size: 20px;
+        font-weight: bold;
     }
     h2{
         font-size: 50px;
         color: #FFFFFF;
-        margin: 1%;
+        margin: 2%;
     }
-    #imgs{
-        display: flex;
-        flex-direction: column-reverse;
+    h3{
+        color: #FFFFFF;
     }
     #img1 img{
-        max-width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 45%;
         height: auto;
         border: 4px solid #0f276e;
         border-radius: 15px;
@@ -43,16 +51,16 @@
         padding: 10%;
         border-radius: 30%;
     }
-    #img3 img{
-        max-width: 70%;
+    #img3{
+        max-width: 50%;
         height: auto;
-        border: 5px solid #0f276e;
+        margin: 10px;
+        border: 4px solid #0f276e;
         border-radius: 15px;
-        margin: 30px;
     }
     #link1{
         font-size: 10px;
-        text-align: justify;
+        text-align: center;
         padding: 1%;
     }
     #link2{
@@ -77,43 +85,18 @@
     <body> 
     <div id="everything">
         <h1>Antelope Island: It's The Place to Be!</h1>
-        <div id="img1">
-            <img src="https://assets.simpleviewinc.com/simpleview/image/upload/crm/saltlake/AntelopeIsland_SeanBuckley_0054_81A29703-DFCF-89C8-4B618BA14CCEC2D9-81a295249a42ba7_81a2d0cc-a8fa-e0a4-c45dec1b9498eaa8.jpg"  
-            alt="This is the entrance sign to the park."/>
-            <p  id="link1">Image from: https://www.visitsaltlake.com/listing/great-salt-lake-%26-antelope-island-1-day-tour/71821/</p>
-        </div>
         <div id="words">
         <h2>Why should you go?</h2> 
             <p id="why"> Antelope Island is one of the most popular state parks in Utah. it is the largest island in the Great Salt Lake and is home to a variety of animals like the American Bison, antelopes, coyotes, and waterfowl. The sceneary is absolutely <b>BREATHTAKING</b>. There are many things you can do like hiking, sightseeing, and just enjoying nature. The ranch, AKA the Fielding Garr Ranch, is a historic site is located near Garr Springs, which was often used as a water source for the indigenous tribes in the area. As you hike up the rocks and hills, you wil feel like you're on top of the world.</p>
-        <br>
-        <br>
-        <div id="imgs">
+        <div>
             <div id="img1">
                 <img src="https://assets.simpleviewinc.com/simpleview/image/upload/crm/saltlake/AntelopeIsland_SeanBuckley_0054_81A29703-DFCF-89C8-4B618BA14CCEC2D9-81a295249a42ba7_81a2d0cc-a8fa-e0a4-c45dec1b9498eaa8.jpg"  
                 alt="This is the entrance sign to the park."/>
                 <p  id="link1">Image from: https://www.visitsaltlake.com/listing/great-salt-lake-%26-antelope-island-1-day-tour/71821/</p>
             </div>
-                <br>
-            <div id="img3">
-                <img src="https://www.visitutah.com/azure/cmsroot/visitutah/media/site-assets/articles-photography/article-photography-4/antelope-island-dsc_9849.jpg"
-                alt="Fielding Garr Ranch"/>
-                <p id="link3">Image from: https://beyondyellowbrickblog.com/antelope-island-state-park-things-to-do/</p> 
-            </div>
-            <br>
-            <br>
         </div>
-        <br> 
-        <br>
             <button id="btn" onclick="more()" >Show more</button>
             <div id="show">
-                <p>I love antelop island!!! WOW!!!</p>
-                <div id="img2">
-                    <img src="https://images.ctfassets.net/0wjmk6wgfops/3WRVZrwr311SwlyzfTydlt/df15f5b0ab7a985f0762196bed3ee1f0/Antelope_Island_blue_skies_stock_AdobeStock_313773770.jpeg?w=1200&h=630&f=center&fit=fill"
-                    alt="Pretty mountains">
-                    <p id="link2">Image from: https://www.utah.com/destinations/state-parks/antelope-island-state-park/</p>
-                </div>
-                <br>
-                
                 <h3>Four Reasons Why</h3>
                 <ul id="facts">
                     <li>Its country trails are amazing for hiking and moutian biking.</li>
@@ -121,16 +104,17 @@
                     <li>When you hike up to Buffalo Point, you can see the entire Salt Lake Valley.</li>
                     <li>This state park welcomes dogs, so make sure to bring along your furry friend!</li>
                     <li>You can support Utah by enjoying beautiful the scenary!</li>
-                
-                
-                <img id=found src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWtQyZYqV1qxi7FvFZMdpEDGMiBFiG7BMT4A&s" 
+                    <li>Below is an image of the ranch I mentioned.</li>
+        
+                <img id=img3 src="https://www.visitutah.com/azure/cmsroot/visitutah/media/site-assets/articles-photography/article-photography-4/antelope-island-dsc_9849.jpg"
+                alt="Fielding Garr Ranch" 
                 onmouseover="change()">
             </div>
-            <script src = "first_webpage.js"></script> 
+            <script src = "staycation.js"></script> 
         
 
 
-<!-2 related images, 1 list, 1 link to another website--> :
+<!--2 related images, 1 list, 1 link to another website--> 
 <!--use fucntion change() and function()back for the "change picture" thing-->
 <!--function back(){
     document.getElementById("tiger").src = "https://transforms.stlzoo.org/production/animals/amur-tiger-01-01.jpg?w=1200&h=1200&auto=compress%2Cformat&fit=crop&dm=1658935145&s=95d03aceddd44dc8271beed46eae30bc"-->
