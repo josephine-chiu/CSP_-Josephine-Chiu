@@ -10,8 +10,10 @@ function more() {
     }
 }
 
-<div id="img2">
-    <img src="https://images.ctfassets.net/0wjmk6wgfops/3WRVZrwr311SwlyzfTydlt/df15f5b0ab7a985f0762196bed3ee1f0/Antelope_Island_blue_skies_stock_AdobeStock_313773770.jpeg?w=1200&h=630&f=center&fit=fill"
-    alt="Pretty mountains">
-    <p id="link2">Image from: https://www.utah.com/destinations/state-parks/antelope-island-state-park/</p>
-</div>
+function change() {
+    document.getElementById("img3").src = "https://images.ctfassets.net/0wjmk6wgfops/3WRVZrwr311SwlyzfTydlt/df15f5b0ab7a985f0762196bed3ee1f0/Antelope_Island_blue_skies_stock_AdobeStock_313773770.jpeg?q=70"
+}
+
+function back() {
+    document.getElementById("img3").src = "https://www.visitutah.com/azure/cmsroot/visitutah/media/site-assets/articles-photography/article-photography-4/antelope-island-dsc_9849.jpg"
+}
