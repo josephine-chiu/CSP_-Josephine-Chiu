@@ -16,6 +16,7 @@
        margin-bottom: 30px;
        color: #FFFFFF;
        font-size: 100px;
+       border: 2px solid #FFFFFF;
    }
    #why{
        font-size: 30px;
@@ -27,6 +28,7 @@
        color: #0f276e;
        font-size: 20px;
        font-weight: bold;
+       
    }
    h2{
        font-size: 50px;
@@ -34,7 +36,10 @@
        margin: 2%;
    }
    h3{
-       color: #FFFFFF;
+    font-size: 50px;   
+    padding: 10px;
+    margin: 1px;
+    color:#0f276e
    }
    #img1 img{
        display: block;
@@ -78,14 +83,26 @@
        margin: 0;
        padding: 0;
    }
+   #words{
+    text-align: center;
+   }
    #btn{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: center; 
     width:50%;
     margin: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #FFFFFF;
+    background-color: #0f276e;
    }
-  
+   #extra {
+        display: none; /* Hidden by default */
+        margin-top: 20px;
+        padding: 15px;
+        background-color: #e0f2f7; /* A light background for the extra info */
+        border-radius: 8px;
+        color: #0f276e; /* A darker text color */
+        text-align: left; /* Add this line */
+    }
 </style>
 
 
@@ -96,7 +113,7 @@
        <h1>Antelope Island: It's The Place to Be!</h1>
        <div id="words">
        <h2>Why should you go?</h2>
-           <p id="why"> Antelope Island is one of the most popular state parks in Utah. it is the largest island in the Great Salt Lake and is home to a variety of animals like the American Bison, antelopes, coyotes, and waterfowl. The sceneary is absolutely <b>BREATHTAKING</b>. There are many things you can do like hiking, sightseeing, and just enjoying nature. The ranch, AKA the Fielding Garr Ranch, is a historic site is located near Garr Springs, which was often used as a water source for the indigenous tribes in the area. As you hike up the rocks and hills, you wil feel like you're on top of the world.</p>
+           <p id="why"> Antelope Island is one of the most popular state parks in Utah. It is the largest island in the Great Salt Lake and is home to a variety of animals like the American Bison, antelopes, coyotes, and waterfowl. The sceneary is absolutely <b>BREATHTAKING</b>. There are many things you can do like hiking, sightseeing, and just enjoying nature. The ranch, AKA the Fielding Garr Ranch, is a historic site is located near Garr Springs, which was often used as a water source for the indigenous tribes in the area. As you hike up the rocks and hills, you will feel like you're on top of the world.</p>
        <div>
            <div id="img1">
                <img src="https://assets.simpleviewinc.com/simpleview/image/upload/crm/saltlake/AntelopeIsland_SeanBuckley_0054_81A29703-DFCF-89C8-4B618BA14CCEC2D9-81a295249a42ba7_81a2d0cc-a8fa-e0a4-c45dec1b9498eaa8.jpg" 
@@ -108,28 +125,27 @@
            <div id="extra">
                <h3>Four Reasons Why</h3>
                  <ul id="facts">
-                   <li>Its country trails are amazing for hiking and moutian biking.</li>
+                   <li>Its country trails are amazing for hiking and moutain biking.</li>
                    <li>You can get very close encounters with the wild bison.</li>
                    <li>When you hike up to Buffalo Point, you can see the entire Salt Lake Valley.</li>
                    <li>This state park welcomes dogs, so make sure to bring along your furry friend!</li>
-                   <li>You can support Utah by enjoying beautiful the scenary!</li>
+                   <li>You can support Utah by enjoying beautiful the scenery!</li>
                    <li>Below is an image of the ranch I mentioned. Hover over and you'll see the blue sky!!</li>
                  </ul>
+                 
                <img id=img3 src="https://www.visitutah.com/azure/cmsroot/visitutah/media/site-assets/articles-photography/article-photography-4/antelope-island-dsc_9849.jpg"
                alt="Fielding Garr Ranch"
                onmouseover="change()" onmouseout="back()">
+               <p>First image from: https://www.visitutah.com/articles/fielding-garr-ranch-antelope-island.</p>
+                <p></p>Second image from: https://www.utah.com/destinations/state-parks/antelope-island-state-park/ </p>
            </div>
            <script src = "staycation.js"></script>
-      
-
-
-
-
+    
 <!--2 related images, 1 list, 1 link to another website-->
 <!--use fucntion change() and function()back for the "change picture" thing-->
 <!--function back(){
    document.getElementById("tiger").src = "https://transforms.stlzoo.org/production/animals/amur-tiger-01-01.jpg?w=1200&h=1200&auto=compress%2Cformat&fit=crop&dm=1658935145&s=95d03aceddd44dc8271beed46eae30bc"-->
   
-       </div>
+    </div>
    </body>
 </html>
